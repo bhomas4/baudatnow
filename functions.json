@@ -1,0 +1,88 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/office-js/custom-functions.schema.json",
+    "functions": [
+      {
+        "id": "get",
+        "name": "get",
+        "description": "Gets a value from the custom API endpoint",
+        "helpUrl": "https://nagatomo.de/functions.html",
+        "parameters": [
+          {
+            "name": "name",
+            "description": "Name parameter (e.g., 'dataset_id')",
+            "type": "string"
+          },
+          {
+            "name": "indicator",
+            "description": "Indicator parameter (e.g., 'indicator1', 'indicator2')",
+            "type": "string"
+          },
+          {
+            "name": "modul",
+            "description": "Module parameter (e.g., 'module1', 'total')",
+            "type": "string"
+          }
+        ],
+        "result": {
+          "type": "number",
+          "description": "Result value"
+        }
+      },
+      {
+        "id": "info",
+        "name": "info",
+        "description": "Gets information about a specific property from the database",
+        "helpUrl": "https://nagatomo.de/functions.html",
+        "parameters": [
+          {
+            "name": "name",
+            "description": "Name parameter (e.g., 'dataset_id')",
+            "type": "string"
+          },
+          {
+            "name": "info",
+            "description": "Info parameter (e.g., 'name', 'description')",
+            "type": "string"
+          }
+        ],
+        "result": {
+          "type": "number",
+          "description": "Result value"
+        }
+      },
+      {
+        "id": "life",
+        "name": "life",
+        "description": "Gets the lifespan value for a dataset",
+        "helpUrl": "https://nagatomo.de/functions.html",
+        "parameters": [
+          {
+            "name": "name",
+            "description": "Name of the dataset",
+            "type": "string"
+          }
+        ],
+        "result": {
+          "type": "string",
+          "description": "Lifespan value or error message"
+        }
+      },
+      {
+        "id": "data",
+        "name": "data",
+        "description": "Finds a matching dataset for a material or component",
+        "helpUrl": "https://nagatomo.de/functions.html",
+        "parameters": [
+          {
+            "name": "name",
+            "description": "Name of the dataset",
+            "type": "string"
+          }
+        ],
+        "result": {
+          "type": "string",
+          "description": "Dataset value or error message"
+        }
+      }
+    ]
+  }
